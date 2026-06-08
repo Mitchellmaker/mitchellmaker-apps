@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MitchellMaker Apps</title>
+
+<style>
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:#E9E7DF;
+color:#232323;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+text-align:center;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+p{
+font-size:18px;
+color:#66635D;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:24px;
+padding:24px;
+text-decoration:none;
+color:#232323;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.icon{
+width:80px;
+height:80px;
+border-radius:20px;
+margin:auto;
+margin-bottom:16px;
+object-fit:cover;
+background:#F7F5F0;
+}
+
+.appname{
+font-size:22px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.description{
+font-size:15px;
+color:#66635D;
+}
+
+.footer{
+margin-top:50px;
+font-size:14px;
+color:#66635D;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>MitchellMaker Apps</h1>
+
+<p>Simple creative and productivity tools for iPhone.</p>
+
+<div class="grid">
+
+<a class="card" href="#">
+<img class="icon" src="https://via.placeholder.com/200">
+<div class="appname">MemoryQ</div>
+<div class="description">
+Remember where you left important items.
+</div>
+</a>
+
+<a class="card" href="#">
+<img class="icon" src="https://via.placeholder.com/200">
+<div class="appname">ArtScaler</div>
+<div class="description">
+Scale artwork across multiple pages.
+</div>
+</a>
+
+<a class="card" href="#">
+<img class="icon" src="https://via.placeholder.com/200">
+<div class="appname">ToneStencil</div>
+<div class="description">
+Create printable stencil artwork.
+</div>
+</a>
+
+<a class="card" href="#">
+<img class="icon" src="https://via.placeholder.com/200">
+<div class="appname">StencilStack</div>
+<div class="description">
+Generate layered stencil systems.
+</div>
+</a>
+
+</div>
+
+<div class="footer">
+© MitchellMaker
+</div>
+
+</div>
+
+</body>
+</html>
