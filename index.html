@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,97 +12,176 @@ font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-se
 background:#E9E7DF;
 color:#232323;
 }
+
 .container{
-max-width:1050px;
+max-width:1120px;
 margin:auto;
-padding:48px 22px;
+padding:54px 22px;
 }
+
 .hero{
 text-align:center;
-margin-bottom:44px;
+margin-bottom:42px;
 }
+
+.hero-badge{
+display:inline-block;
+background:#232323;
+color:white;
+padding:8px 15px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+margin-bottom:18px;
+}
+
 .hero h1{
-font-size:clamp(42px,9vw,82px);
-line-height:.95;
+font-size:clamp(44px,8vw,86px);
+line-height:.92;
 margin:0 0 18px;
-letter-spacing:-2px;
+letter-spacing:-3px;
 }
+
 .hero p{
 font-size:20px;
+line-height:1.45;
 color:#66635D;
-max-width:640px;
+max-width:680px;
 margin:auto;
 }
+
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
 gap:22px;
+align-items:stretch;
 }
+
 .card{
 background:#FFFFFF;
-border-radius:32px;
-padding:28px;
+border-radius:34px;
+padding:30px 26px;
 box-shadow:0 14px 34px rgba(0,0,0,.08);
 text-align:center;
+min-height:390px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
 }
+
+.featured{
+outline:3px solid #232323;
+}
+
+.feature-label{
+font-size:12px;
+font-weight:800;
+letter-spacing:.5px;
+text-transform:uppercase;
+background:#E9E7DF;
+padding:7px 12px;
+border-radius:999px;
+margin-bottom:8px;
+}
+
 .icon{
-width:96px;
-height:96px;
+width:100px;
+height:100px;
 border-radius:24px;
 object-fit:cover;
 margin-bottom:18px;
-box-shadow:0 8px 18px rgba(0,0,0,.12);
+box-shadow:0 8px 20px rgba(0,0,0,.14);
 }
+
 .card h2{
 font-size:28px;
 margin:0 0 10px;
 }
+
 .card p{
-font-size:17px;
+font-size:16px;
 line-height:1.45;
 color:#66635D;
-min-height:72px;
+margin:0;
 }
+
 .button{
 display:inline-block;
-margin-top:14px;
+margin-top:20px;
 padding:12px 20px;
 border-radius:999px;
 background:#232323;
 color:white;
 text-decoration:none;
-font-weight:700;
+font-weight:800;
 font-size:15px;
 }
+
 .button.soon{
 background:#D7D3CA;
 color:#66635D;
 }
+
 .section{
 background:#F7F5F0;
 border-radius:32px;
-padding:32px;
+padding:34px;
 margin-top:28px;
 box-shadow:0 10px 24px rgba(0,0,0,.05);
 }
+
 .section h2{
 font-size:30px;
 margin:0 0 12px;
 }
+
 .section p{
 font-size:17px;
-line-height:1.55;
+line-height:1.6;
 color:#66635D;
+margin:0;
 }
-.links a{
+
+.privacy-links{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
+margin-top:18px;
+}
+
+.privacy-links a,
+.section a{
 color:#232323;
-font-weight:700;
+font-weight:800;
 }
+
+.privacy-pill{
+display:block;
+background:#FFFFFF;
+border-radius:18px;
+padding:14px 16px;
+text-decoration:none;
+box-shadow:0 6px 16px rgba(0,0,0,.05);
+}
+
 .footer{
 text-align:center;
 font-size:14px;
 color:#66635D;
 padding:36px 0 8px;
+}
+
+@media(max-width:640px){
+.container{
+padding:38px 18px;
+}
+.card{
+min-height:auto;
+}
+.hero h1{
+letter-spacing:-2px;
+}
 }
 </style>
 </head>
@@ -112,37 +190,47 @@ padding:36px 0 8px;
 <div class="container">
 
 <section class="hero">
+<div class="hero-badge">Independent iPhone Apps</div>
 <h1>MitchellMaker Apps</h1>
-<p>Simple, practical and creative tools for iPhone, designed by MitchellMaker.</p>
+<p>Simple, practical and creative tools designed by artist and maker Steve Mitchell.</p>
 </section>
 
 <section class="grid">
 
-<div class="card">
+<div class="card featured">
+<div>
+<div class="feature-label">Featured App</div>
 <img class="icon" src="assets/assets/assets/MemoryQ.png" alt="MemoryQ app icon">
 <h2>MemoryQ</h2>
 <p>Remember where you left important items using photos, voice notes and typed notes.</p>
+</div>
 <a class="button soon" href="#">Coming Soon</a>
 </div>
 
 <div class="card">
+<div>
 <img class="icon" src="assets/assets/assets/ArtScaler.png" alt="ArtScaler app icon">
 <h2>ArtScaler</h2>
 <p>Scale artwork, drawings and designs across multiple printable pages.</p>
+</div>
 <a class="button" href="https://apps.apple.com/th/app/artscaler/id6761416759">View on App Store</a>
 </div>
 
 <div class="card">
+<div>
 <img class="icon" src="assets/assets/assets/ToneStencil.png" alt="ToneStencil app icon">
 <h2>ToneStencil</h2>
 <p>Create bold printable stencil artwork from photos and images.</p>
+</div>
 <a class="button" href="https://apps.apple.com/th/app/tonestencil/id6767592281">View on App Store</a>
 </div>
 
 <div class="card">
+<div>
 <img class="icon" src="assets/assets/assets/StencilStack.png" alt="StencilStack app icon">
 <h2>StencilStack</h2>
 <p>Build layered stencil systems for spray paint, murals and creative print work.</p>
+</div>
 <a class="button soon" href="#">Coming Soon</a>
 </div>
 
@@ -153,14 +241,21 @@ padding:36px 0 8px;
 <p>MitchellMaker Apps are small, focused tools built to solve real creative and everyday problems. Each app is designed to be simple, useful and easy to understand without unnecessary clutter.</p>
 </section>
 
-<section class="section links">
+<section class="section">
 <h2>Support</h2>
 <p>Need help with one of our apps? Contact us at <a href="mailto:Mitchellmaker.apps@gmail.com">Mitchellmaker.apps@gmail.com</a>.</p>
 </section>
 
-<section class="section links">
+<section class="section">
 <h2>Privacy</h2>
 <p>Our apps are designed with privacy in mind. App-specific privacy policies are available from each App Store listing and support page.</p>
+
+<div class="privacy-links">
+<a class="privacy-pill" href="https://docs.google.com/document/d/1Uf4P2YlzmGAlyJ54QEiBoIWVXbejRVy88Y-_5YZsuEA">MemoryQ Privacy Policy</a>
+<a class="privacy-pill" href="https://docs.google.com/document/d/1Uf4P2YlzmGAlyJ54QEiBoIWVXbejRVy88Y-_5YZsuEA">ArtScaler Privacy Policy</a>
+<a class="privacy-pill" href="https://docs.google.com/document/d/1Uf4P2YlzmGAlyJ54QEiBoIWVXbejRVy88Y-_5YZsuEA">ToneStencil Privacy Policy</a>
+<a class="privacy-pill" href="https://docs.google.com/document/d/1Uf4P2YlzmGAlyJ54QEiBoIWVXbejRVy88Y-_5YZsuEA">StencilStack Privacy Policy</a>
+</div>
 </section>
 
 <div class="footer">
